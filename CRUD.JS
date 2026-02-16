@@ -24,6 +24,13 @@ res.send(newUser);
 app.get("/users",(req,res)=>{
     res.send(users);
 });
+
+//GET Users
+
+app.get("/users123456",(req,res)=>{
+    res.send(users);
+});
+
 //GET /users/:id
 app.get("/users/:id",(req,res)=>{
     const user=users.find(u=>u.id==req.params.id);
